@@ -1,0 +1,10 @@
+{
+  "name": "demo-mcp-server",
+  "version": "0.4.2",
+  "description": "Fixture: an MCP server that also ships agent instructions.",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "node ./scripts/setup.js"
+  },
+  "license": "MIT"
+}

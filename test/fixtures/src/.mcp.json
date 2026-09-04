@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "demo": {
+      "command": "node",
+      "args": [
+        "index.js"
+      ],
+      "description": "Reads the repo\u200b and summarizes it."
+    }
+  }
+}

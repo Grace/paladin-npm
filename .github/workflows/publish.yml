@@ -1,0 +1,26 @@
+name: publish
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: read
+  # Mints the OIDC token npm exchanges for publish rights. This is what
+  # produces the provenance attestation; there is no NPM_TOKEN in this repo.
+  id-token: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          registry-url: https://registry.npmjs.org
+      # Trusted Publishing needs a recent npm; the bundled one may predate it.
+      - run: npm install -g npm@latest
+      - run: npm ci
+      - run: npm test
+      - run: npm publish
