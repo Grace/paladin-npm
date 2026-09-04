@@ -1,16 +1,32 @@
 {
   "name": "@gracefulcode/paladin",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Audit an npm package before you install it: install hooks, shipped agent instruction files, hidden characters, and provenance.",
   "type": "module",
-  "bin": { "paladin": "src/cli.js" },
-  "exports": { ".": "./src/audit.js" },
-  "files": ["src"],
-  "engines": { "node": ">=20" },
+  "bin": {
+    "paladin": "src/cli.js"
+  },
+  "exports": {
+    ".": "./src/audit.js"
+  },
+  "files": [
+    "src"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
   "scripts": {
     "test": "node --test"
   },
-  "keywords": ["npm", "supply-chain", "security", "provenance", "mcp", "agents", "audit"],
+  "keywords": [
+    "npm",
+    "supply-chain",
+    "security",
+    "provenance",
+    "mcp",
+    "agents",
+    "audit"
+  ],
   "license": "MIT",
   "dependencies": {
     "npm-package-arg": "^12.0.0",
