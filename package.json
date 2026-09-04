@@ -2,6 +2,14 @@
   "name": "@gracefulcode/paladin",
   "version": "0.1.1",
   "description": "Audit an npm package before you install it: install hooks, shipped agent instruction files, hidden characters, and provenance.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grace/paladin-npm.git"
+  },
+  "homepage": "https://github.com/Grace/paladin-npm#readme",
+  "bugs": {
+    "url": "https://github.com/Grace/paladin-npm/issues"
+  },
   "type": "module",
   "bin": {
     "paladin": "src/cli.js"
